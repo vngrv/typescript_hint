@@ -12,9 +12,7 @@ interface Todo {
     description: string;
     completed: boolean;
 }
-
 type TodoPreview = Omit<Todo, 'description'>;
-
 const todo: TodoPreview = {
     title: 'Clean room',
     completed: false,
