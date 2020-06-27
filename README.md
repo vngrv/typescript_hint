@@ -6,7 +6,7 @@
 <br>
     Constructs a type by picking all properties from T and then removing K.
 <br>
- ```js
+ ```
 interface Todo {
     title: string;
     description: string;
@@ -25,7 +25,7 @@ const todo: TodoPreview = {
     <br>При использовании, необъявленной в проекте TS, библиотеки JS
 3. Как автоматически получить файлы declaration?
     <br>Установив опцию в jsconfig.js
-```js
+```
 {
 "compilerOptions": {
     ...
@@ -36,7 +36,7 @@ const todo: TodoPreview = {
 4. Как перезагрузить функцию и что такое перезагрузка функции?
     <br>Достигается реализация полиморфизма. Функции две и более могут иметь одно и тоже имя, но бывают случаи когда необходимо изменить их тела.
     <br>Надо использовать то же имя цункции над оригинальной функцией без фигурных скобом, затем изменить число, типы входящих и исходящих значений. 
-```js
+```
 function add(x: string, y: string): string;
 function add(x: number, y: number): number {
     return x+y;
