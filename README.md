@@ -5,7 +5,8 @@
     Новый тип, в котором можно указать свойства, которые будут исключены из исходного типа
 <br>
     Constructs a type by picking all properties from T and then removing K.
- ```
+<br>
+ ```js
 interface Todo {
     title: string;
     description: string;
@@ -24,7 +25,7 @@ const todo: TodoPreview = {
     <br>При использовании, необъявленной в проекте TS, библиотеки JS
 3. Как автоматически получить файлы declaration?
     <br>Установив опцию в jsconfig.js
-```
+```js
 {
 "compilerOptions": {
     ...
